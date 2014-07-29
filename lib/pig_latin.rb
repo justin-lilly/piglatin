@@ -3,9 +3,10 @@
 module PigLatin
   
   def PigLatin.translate(text)
+    if text.nil? then return "Translation will appear here." end
     pig_arr = text.split(" ")
     pig_trans_arr = []
-    if text.nil? then return "Please enter a stream." end
+    puts text
     pig_arr.each do |x|
       pig_string=""
 
@@ -28,4 +29,3 @@ module PigLatin
     return pig_trans_arr.join(" ")
   end
 end
-
