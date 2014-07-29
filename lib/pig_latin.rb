@@ -5,7 +5,7 @@ module PigLatin
   def PigLatin.translate(text)
     pig_arr = text.split(" ")
     pig_trans_arr = []
-
+    if text.nil? then return "Please enter a stream." end
     pig_arr.each do |x|
       pig_string=""
 
